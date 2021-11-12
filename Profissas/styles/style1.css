@@ -1,0 +1,16 @@
+:root {
+    --verde: #33BB30;
+    
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--verde);
+}
+
+#logo > img {
+    display: block;
+    object-fit:contain;
+}
