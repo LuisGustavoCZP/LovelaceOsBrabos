@@ -6,15 +6,17 @@
     display:flex;
     flex-direction:column;
     
-    justify-content: space-between;
+    justify-content: stretch;
     border: 1px solid var(--preto);
     height: 60vh;
     width: 350px;
     min-height: 300px;
     color:var(--preto);
+
+    --messenge-radius: 15px;
 }
 
-#messenger-title {
+#messenger-header {
     display:flex;
     flex-direction:row;
     height: fit-content;
@@ -24,13 +26,13 @@
     background-color: var(--azul-claro);
 }
 
-#messenger-title > div {
+#messenger-header > div {
     display:flex;
     flex-direction:row;
     align-items: center
 }
 
-#messenger-title > div > img {
+#messenger-header > div > img {
     display:flex;
     flex-shrink: 1;
     object-fit: cover;
@@ -41,12 +43,12 @@
     cursor:pointer;
 }
 
-#messenger-title > div > div {
+#messenger-header > div > div {
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-#messenger-title > div > div > h4 {
+#messenger-header > div > div > h4 {
     display:flex;
     margin: 0px;
     font-size: 26px;
@@ -54,7 +56,7 @@
     font-family: var(--poppins);
 }
 
-#messenger-title > div > div > span {
+#messenger-header > div > div > span {
     display:flex;
     flex-direction:row;
     
@@ -64,19 +66,19 @@
     margin-top: 5px;
 }
 
-#messenger-title > div > div > span > h5 {
+#messenger-header > div > div > span > h5 {
     margin: 0px;
     font-size: 18px;
     font-family: var(--roboto);
     font-weight: normal;
 }
 
-#messenger-title > div > div > span > img {
+#messenger-header > div > div > span > img {
     width: 20px;
     object-fit: contain;
 }
 
-#messenger-title > a {
+#messenger-header > a {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -84,7 +86,7 @@
     font-family: var(--poppins);
 }
 
-#messenger-title > a > img {
+#messenger-header > a > img {
     width: 54px;
     height: 54px;
     cursor:pointer;
@@ -108,21 +110,16 @@
     height: 40px;
 }
 
-#messenger-input > span > button {
-    background-color: var(--verde);
-    width: 140px;
-    padding: 2px;
-    font-family: var(--poppins);
-    border: none;
-    border-radius: var(--button-radius);
+#messenger-input > span > img {
     cursor:pointer;
 }
 
-#messenger-input > span > button:hover {
-    background-color: var(--verde-highlight);
+#messenger-input-send {
+    width: 140px;
+    padding: 2px;
 }
 
-#messenger-input > textarea {
+#messenger-input-msg {
     width: calc(100% - 30px);
     height: calc(100% - 30px - 40px);
     min-height: 100px;
@@ -136,6 +133,7 @@
 }
 
 #messenger-content {
+    margin: 0px;
     display:flex;
     flex-direction:column;
     flex-grow: 1;
@@ -143,26 +141,30 @@
     list-style: none;
     overflow: none;
     overflow-y: scroll;
-}
-
-#messenger-content > li {
-    margin: 10px;
-    padding: 10px;
-    color:var(--preto);
-    font-family: var(--roboto);
-    background-color: var(--cinza-claro);
-    width: 70%;
-    height: max-content;
+    height: 100%;
 }
 
 .myuser {
     align-self: flex-end;
+    border-bottom-right-radius: 0px !important;
 }
 
 .otheruser {
     align-self: flex-start;
+    border-bottom-left-radius: 0px !important;
 }
 
-#messenger-content > li > p {
+.messenge {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--cinza-claro);
+    width: 70%;
+    height: max-content;
+    border-radius: var(--messenge-radius);
+}
+
+.messenge > p {
     margin: 0px;
+    color:var(--preto);
+    font-family: var(--roboto);
 }

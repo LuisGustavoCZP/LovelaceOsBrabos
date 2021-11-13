@@ -24,10 +24,11 @@ class Messenge
     }
 }
 
-var subpage = document.getElementById("subpage");
-var pagestyle = document.getElementById("pagestyle");
-var pagelayout = document.getElementById("pagelayout");
+var messengerElement = document.getElementById("messenger");
+var headerElement = document.getElementById("messenger-header");
+var inputmsgElement = document.getElementById("messenger-input-msg");
 var contentElement = document.getElementById("messenger-content");
+var sendbuttonElement = document.getElementById("messenger-input-send");
 
 function OnLoadXML(data)
 {
@@ -39,4 +40,10 @@ function OnLoadXML(data)
     }
 }
 
-LoadXML("datas/messenges.xml", OnLoadXML);
+inputmsgElement.value = "Oi Yan, deu ruim aqui... ai menino meu filho fica jogando bola aqui em casa, esse pestinha! Enfim... Quanto que fica pra trocar as 12 lampadas?";   
+sendbuttonElement.onclick = x=> 
+{
+    sendbuttonElement.disabled = true;
+    inputmsgElement.value = "";
+    LoadXML("datas/messenges.xml", OnLoadXML);
+};

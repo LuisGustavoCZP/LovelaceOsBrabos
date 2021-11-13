@@ -8,7 +8,7 @@
     <body id="messenger-parent">
         <aside id="messenger">
             <script src="../../../scripts/loadobject.js"></script>
-            <div id="messenger-title">
+            <div id="messenger-header">
                 <div>
                     <img src="../../../images/equipe/yan.png" />
                     <div>
@@ -23,15 +23,15 @@
                     <img src="../../../images/icons/more_vert_black_24dp.svg" />
                 </a>
             </div>
-            <ul  id="messenger-content">
+            <ul id="messenger-content">
 
             </ul>
             <div id="messenger-input">
                 <span>
                     <img src="../../../images/icons/sentiment_satisfied_black_24dp.svg" />
-                    <button>Enviar</button>
+                    <button id="messenger-input-send" class="botao-padrao">Enviar</button>
                 </span>
-                <textarea name="" id="" placeholder="Digite sua mensagem..."></textarea>
+                <textarea disabled id="messenger-input-msg" placeholder="Digite sua mensagem..."></textarea>
             </div>
             <script src="scripts/messenger.js"></script>
         </aside>
