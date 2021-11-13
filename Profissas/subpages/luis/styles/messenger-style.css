@@ -24,22 +24,29 @@
     background-color: var(--azul-claro);
 }
 
-#messenger-title > img {
+#messenger-title > div {
+    display:flex;
+    flex-direction:row;
+    align-items: center
+}
+
+#messenger-title > div > img {
     display:flex;
     flex-shrink: 1;
     object-fit: cover;
     border-radius: 50%;
     width: fit-content;
     height: 64px;
-    margin: 5px;
+    margin: 5px 15px 5px 5px;
+    cursor:pointer;
 }
 
-#messenger-title > div {
+#messenger-title > div > div {
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-#messenger-title > div > h4 {
+#messenger-title > div > div > h4 {
     display:flex;
     margin: 0px;
     font-size: 26px;
@@ -47,7 +54,7 @@
     font-family: var(--poppins);
 }
 
-#messenger-title > div > span {
+#messenger-title > div > div > span {
     display:flex;
     flex-direction:row;
     
@@ -57,14 +64,14 @@
     margin-top: 5px;
 }
 
-#messenger-title > div > span > h5 {
+#messenger-title > div > div > span > h5 {
     margin: 0px;
     font-size: 18px;
     font-family: var(--roboto);
     font-weight: normal;
 }
 
-#messenger-title > div > span > img {
+#messenger-title > div > div > span > img {
     width: 20px;
     object-fit: contain;
 }
@@ -80,6 +87,7 @@
 #messenger-title > a > img {
     width: 54px;
     height: 54px;
+    cursor:pointer;
 }
 
 #messenger-content {
@@ -112,10 +120,17 @@
 #messenger-input > span > button {
     background-color: var(--verde);
     width: 140px;
+    padding: 2px;
     font-family: var(--poppins);
     border: none;
-    
+    border-radius: var(--button-radius);
+    cursor:pointer;
 }
+
+#messenger-input > span > button:hover {
+    background-color: var(--verde-highlight);
+}
+
 
 #messenger-input > textarea {
     width: calc(100% - 30px);
