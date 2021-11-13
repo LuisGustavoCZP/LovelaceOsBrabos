@@ -2,20 +2,35 @@
 <html>
     <head>
         <title>Messenger</title>
-        <link rel="stylesheet" href="../../styles/style1.css" />
+        <link rel="stylesheet" href="../../styles/root.css" />
         <link rel="stylesheet" href="styles/messenger-style.css" />
     </head>
-    <body>
-        <aside id="messenger" width="200px" height="60%">
-            <div>
-                
+    <body id="messenger-parent">
+        <aside id="messenger">
+            <div id="messenger-title">
+                <img src="/images/equipe/yan.png" />
+                <div>
+                    <h4>Yan Cassiano</h4>
+                    <span>
+                        <img src="/images/icons/electrical_services_black_24dp.svg" />
+                        <h5>Tecnico Eletricista</h5>
+                    </span>
+                </div>
+                <a>
+                    <img src="/images/icons/more_vert_black_24dp.svg" />
+                </a>
             </div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul  id="messenger-content">
+
             </ul>
+            <div id="messenger-input">
+                <span>
+                    <img src="/images/icons/sentiment_satisfied_black_24dp.svg" />
+                    <button>Enviar</button>
+                </span>
+                <textarea name="" id="" placeholder="Digite sua mensagem..."></textarea>
+            </div>
+            <script src="scripts/messenger.js"></script>
         </aside>
     </body>
 </html>
