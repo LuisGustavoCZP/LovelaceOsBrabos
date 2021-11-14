@@ -20,7 +20,7 @@ main > iframe {
     display:flex;
     flex-grow: 1;
     width:100vw;
-    --frame-height: calc(100vh);
+    --frame-height: calc(100vh - 30px);
     min-height: var(--frame-height);
     max-height: var(--frame-height);
     overflow: hidden;

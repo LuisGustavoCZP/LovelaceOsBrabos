@@ -16,4 +16,12 @@
     --logo-font: 'Libre Baskerville', serif;
     --poppins: 'Poppins', sans-serif;
     --roboto: 'Roboto', sans-serif;
+<<<<<<< Updated upstream
 }
+=======
+
+    --button-radius: 5px;
+    --mudarcor-inicial: hsl(0, 0%, 100%);
+    --mudarcor-final: hsl(0, 0%, 0%);
+}
+>>>>>>> Stashed changes
