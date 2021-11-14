@@ -46,11 +46,19 @@
     border: none;
     border-radius: var(--button-radius);
     cursor:pointer;
-
+    text-align: center;
+    vertical-align: middle;
     --mudarcor-inicial: var(--verde);
     --mudarcor-final: var(--verde-highlight);
     
     animation: --mudarcorinnbackground .5s;
+}
+
+.botao-padrao > h4 {
+    margin: 0px;
+    font-family: var(--poppins);
+    text-align: center;
+    vertical-align: middle;
 }
 
 .botao-padrao:hover:enabled {
@@ -61,4 +69,5 @@
 .botao-padrao:disabled {
     background-color: var(--cinza-escuro);
     animation: none;
+    cursor:default;
 }

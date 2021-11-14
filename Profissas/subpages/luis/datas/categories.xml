@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categories>
+    <category>
+        <name>Eletricistas</name>
+        <icon>../../../images/icons/electrical_services_black_24dp.svg</icon>
+        <userids>
+            <userid>1</userid>
+        </userids>
+    </category>
+</categories>

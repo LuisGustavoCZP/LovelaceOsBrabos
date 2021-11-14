@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <name>Yan Cassiano</name>
+        <category>0</category>
+        <job>Tecnico Eletricista</job>
+        <photo>../../../images/equipe/yan.png</photo>
+        <messenges>
+            <messenge>
+                <type>messenge</type>
+                <owner>myuser</owner>
+                <text>Oi Yan, deu ruim aqui... ai menino meu filho fica jogando bola aqui em casa, esse pestinha! Enfim... Quanto que fica pra trocar as 12 lampadas?</text>
+            </messenge>
+            <messenge>
+                <type>messenge</type>
+                <owner>otheruser</owner>
+                <text>Bom dia David! Sério? 12 lampadas??? Vou marndar meu orçamento senhor, mas já aviso que vai sair caro! Só um instante...</text>
+            </messenge>
+            <messenge>
+                <type>orcamento</type>
+                <owner>otheruser</owner>
+                <text>VER ORÇAMENTO</text>
+            </messenge>
+        </messenges>
+    </user>
+</users>
