@@ -2,15 +2,15 @@
 
 :root {
     /* cores */
-    --vermelho: #E33D3D;
-    --verde: #04D361;
-    --verde-highlight: #13F478;
-    --azul-escuro: #5889EA;
-    --azul-claro: #A0BEF6;
-    --cinza-claro: #EDEDED;
-    --cinza-escuro: #6A617F;
-    --preto: #32264D;
-    --amarelo: #FFBD00;
+    --vermelho: hsl(0, 75%, 56%);
+    --verde: hsl(147, 96%, 42%);
+    --verde-highlight: hsl(147, 91%, 52%);
+    --azul-escuro: hsl(220, 78%, 63%);
+    --azul-claro: hsl(219, 83%, 80%);
+    --cinza-claro: hsl(0, 0%, 93%);
+    --cinza-escuro: hsl(258, 13%, 44%);
+    --preto: hsl(258, 34%, 23%);
+    --amarelo: hsl(44, 100%, 50%);
 
     /* fontes */
     --logo-font: 'Libre Baskerville', serif;
@@ -18,11 +18,26 @@
     --roboto: 'Roboto', sans-serif;
 
     --button-radius: 5px;
-    --mudarcor-cor: #fff;
+    --mudarcor-inicial: hsl(0, 0%, 100%);
+    --mudarcor-final: hsl(0, 0%, 0%);
 }
 
-@keyframes --mudarcor {
-    
+@keyframes --mudarcoroutbackground {
+    0% {
+        background-color: var(--mudarcor-inicial);
+    }
+    100% {
+        background-color: var(--mudarcor-final);
+    }
+}
+
+@keyframes --mudarcorinnbackground {
+    0% {
+        background-color: var(--mudarcor-final);
+    }
+    100% {
+        background-color: var(--mudarcor-inicial);
+    }
 }
 
 .botao-padrao {
@@ -31,12 +46,19 @@
     border: none;
     border-radius: var(--button-radius);
     cursor:pointer;
+
+    --mudarcor-inicial: var(--verde);
+    --mudarcor-final: var(--verde-highlight);
+    
+    animation: --mudarcorinnbackground .5s;
 }
 
 .botao-padrao:hover:enabled {
     background-color: var(--verde-highlight);
+    animation: --mudarcoroutbackground .5s;
 }
 
 .botao-padrao:disabled {
     background-color: var(--cinza-escuro);
+    animation: none;
 }
