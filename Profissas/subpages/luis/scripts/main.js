@@ -138,7 +138,7 @@ var tempMsg;
 function ReceivingMessage(){
     let msg = new JobMessenge("messenge", "otheruser", "...");
     msg.CreateElement(contentElement);
-    setTimeout(ReceiveMessage, 2000);
+    setTimeout(ReceiveMessage, 1000);
 }
 
 function ReceiveMessage(){
@@ -146,7 +146,7 @@ function ReceiveMessage(){
     users[userIndex].messenges[msgIndex++].CreateElement (contentElement);
     let msg = new JobMessenge("messenge", "otheruser", "...");
     msg.CreateElement(contentElement);
-    setTimeout(ReceiveDoc, 2000);
+    setTimeout(ReceiveDoc, 5000);
 }
 
 function ReceiveDoc(){
