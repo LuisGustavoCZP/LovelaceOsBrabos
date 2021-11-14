@@ -16,12 +16,66 @@
     --logo-font: 'Libre Baskerville', serif;
     --poppins: 'Poppins', sans-serif;
     --roboto: 'Roboto', sans-serif;
-<<<<<<< Updated upstream
-}
-=======
 
     --button-radius: 5px;
     --mudarcor-inicial: hsl(0, 0%, 100%);
     --mudarcor-final: hsl(0, 0%, 0%);
 }
->>>>>>> Stashed changes
+
+@keyframes --mudarcoroutbackground {
+    0% {
+        background-color: var(--mudarcor-inicial);
+    }
+    100% {
+        background-color: var(--mudarcor-final);
+    }
+}
+
+@keyframes --mudarcorinnbackground {
+    0% {
+        background-color: var(--mudarcor-final);
+    }
+    100% {
+        background-color: var(--mudarcor-inicial);
+    }
+}
+
+.botao-padrao {
+    background-color: var(--verde);
+    font-family: var(--poppins);
+    border: none;
+    border-radius: var(--button-radius);
+    cursor:pointer;
+    text-align: center;
+    vertical-align: middle;
+    --mudarcor-inicial: var(--verde);
+    --mudarcor-final: var(--verde-highlight);
+    
+    animation: --mudarcorinnbackground .5s;
+}
+
+.botao-padrao > h4 {
+    margin: 0px;
+    font-family: var(--poppins);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.botao-padrao:hover:enabled {
+    background-color: var(--verde-highlight);
+    animation: --mudarcoroutbackground .5s;
+}
+
+.botao-padrao:disabled {
+    background-color: var(--cinza-escuro);
+    animation: none;
+    cursor:default;
+}
+
+.invisivel {
+    display: none;
+}
+
+body{
+    margin: 0px;
+}
