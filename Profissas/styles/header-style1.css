@@ -1,7 +1,14 @@
+header {
+    height: 70px;
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: center;
+}
+
 .headerConteiner {
     width: 100vw;
-    min-width: 980px;
-    max-width: 1900px;
+    /*min-width: 980px;
+    max-width: 1900px;*/
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -79,11 +86,4 @@
 
 .exitBox span {
     color: white;
-}
-
-header {
-    height: 70px;
-    background-color: var(--azul-escuro);
-    display: flex;
-    justify-content: center;
 }

@@ -16,13 +16,29 @@ aside > iframe {
     overflow: hidden;
 }
 
-main > iframe {
-    display:flex;
-    flex-grow: 1;
-    width:100vw;
-    --frame-height: calc(100vh - 30px);
-    min-height: var(--frame-height);
-    max-height: var(--frame-height);
-    overflow: hidden;
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul h3 {
+    margin: 0;
+}
+
+main > nav a {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-height: 20px;
+}
+
+main > nav a > img {
+    display: flex;
+}
+
+main > nav a > h3 {
+    font-size: 50%;
 }
 
