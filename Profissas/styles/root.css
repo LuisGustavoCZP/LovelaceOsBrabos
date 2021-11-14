@@ -54,7 +54,7 @@
     animation: --mudarcorinnbackground .5s;
 }
 
-.botao-padrao > h4 {
+.botao-padrao h4 {
     margin: 0px;
     font-family: var(--poppins);
     text-align: center;

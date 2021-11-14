@@ -10,7 +10,7 @@ aside > iframe {
     position: absolute;
     flex-grow: 1;
     width:352px;
-    min-height:600px;
+    min-height:calc(100vh - 70px);
     right: 0px;
     height:fit-content;
     overflow: hidden;
