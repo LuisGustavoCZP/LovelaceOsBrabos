@@ -1,3 +1,189 @@
+#messenger-parent {
+    margin: 0;
+}
+
 #messenger {
-    background-color: blue;
+    display:flex;
+    flex-direction:column;
+    
+    justify-content: stretch;
+    border: 1px solid var(--preto);
+    height: calc(100vh - 2px);
+    width: calc(100vw - 2px);
+    min-width: 350px;
+    min-height: 300px;
+    color:var(--preto);
+    background-color:var(--branco);
+    --messenge-radius: 15px;
+}
+
+#messenger-header {
+    display:flex;
+    flex-direction:row;
+    height: fit-content;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: var(--azul-claro);
+}
+
+#messenger-header > div {
+    display:flex;
+    flex-direction:row;
+    align-items: center
+}
+
+#messenger-header > div > img {
+    display:flex;
+    flex-shrink: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    width: fit-content;
+    height: 64px;
+    margin: 5px 15px 5px 5px;
+    cursor:pointer;
+}
+
+#messenger-header > div > div {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#messenger-header > div > div > h4 {
+    display:flex;
+    margin: 0px;
+    font-size: 26px;
+    line-height: .5em;
+    font-family: var(--poppins);
+}
+
+#messenger-header > div > div > span {
+    display:flex;
+    flex-direction:row;
+    
+    align-items: center;
+    margin: 0px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+#messenger-header > div > div > span > h5 {
+    margin: 0px;
+    font-size: 18px;
+    font-family: var(--roboto);
+    font-weight: normal;
+}
+
+#messenger-header > div > div > span > img {
+    width: 20px;
+    object-fit: contain;
+}
+
+#messenger-header > a {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    font-family: var(--poppins);
+}
+
+#messenger-header > a > img {
+    width: 54px;
+    height: 54px;
+    cursor:pointer;
+}
+
+#messenger-input {
+    display:flex;
+    flex-direction:column;
+    height: max-content;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#messenger-input > span {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 24px);
+    height: 40px;
+}
+
+#messenger-input > span > img {
+    cursor:pointer;
+}
+
+#messenger-input-send {
+    width: 140px;
+    padding: 2px;
+}
+
+#messenger-input-msg {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px - 40px);
+    min-height: 100px;
+    resize: none;
+    background-color: var(--cinza-claro);
+    
+    color:var(--preto);
+    font-family: var(--roboto);
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding: 5px;
+    border: 0px;
+}
+
+#messenger-content {
+    margin: 0px;
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+    padding: 5px;
+    list-style: none;
+    overflow: none;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.myuser {
+    align-self: flex-end;
+    border-bottom-right-radius: 0px !important;
+}
+
+.otheruser {
+    align-self: flex-start;
+    border-bottom-left-radius: 0px !important;
+}
+
+.messenge {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--cinza-claro);
+    width: 70%;
+    height: max-content;
+    border-radius: var(--messenge-radius);
+}
+
+.messenge > p {
+    margin: 0px;
+    color:var(--preto);
+    font-family: var(--roboto);
+    font-size: 14px;
+}
+
+.orcamento {
+    user-select: none;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grow{
+    display: flex;
+    flex-grow: 1;
 }
