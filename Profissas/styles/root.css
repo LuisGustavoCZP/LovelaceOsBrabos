@@ -17,7 +17,7 @@
     --poppins: 'Poppins', sans-serif;
     --roboto: 'Roboto', sans-serif;
 
-    --button-radius: 5px;
+    --button-radius: 8px;
     --mudarcor-inicial: hsl(0, 0%, 100%);
     --mudarcor-final: hsl(0, 0%, 0%);
 }
