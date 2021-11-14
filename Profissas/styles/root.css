@@ -11,7 +11,7 @@
     --cinza-escuro: hsl(258, 13%, 44%);
     --preto: hsl(258, 34%, 23%);
     --amarelo: hsl(44, 100%, 50%);
-
+    --branco: hsl(0, 0%, 100%);
     /* fontes */
     --logo-font: 'Libre Baskerville', serif;
     --poppins: 'Poppins', sans-serif;
@@ -70,4 +70,12 @@
     background-color: var(--cinza-escuro);
     animation: none;
     cursor:default;
+}
+
+.invisivel {
+    display: none;
+}
+
+body{
+    margin: 0px;
 }

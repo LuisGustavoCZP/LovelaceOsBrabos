@@ -8,11 +8,12 @@
     
     justify-content: stretch;
     border: 1px solid var(--preto);
-    height: 60vh;
-    width: 350px;
+    height: calc(100vh - 2px);
+    width: calc(100vw - 2px);
+    min-width: 350px;
     min-height: 300px;
     color:var(--preto);
-
+    background-color:var(--branco);
     --messenge-radius: 15px;
 }
 
@@ -130,6 +131,8 @@
     font-family: var(--roboto);
     font-size: 14px;
     margin-bottom: 12px;
+    padding: 5px;
+    border: 0px;
 }
 
 #messenger-content {
@@ -168,6 +171,10 @@
     color:var(--preto);
     font-family: var(--roboto);
     font-size: 14px;
+}
+
+.orcamento {
+    user-select: none;
 }
 
 .center{

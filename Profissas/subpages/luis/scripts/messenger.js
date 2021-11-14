@@ -62,7 +62,7 @@ class JobMessenge
     }
 
     CreateElement(parentElement) {
-        LoadHTML("template-"+this.type+".html", element => 
+        LoadHTML("template-messenger-"+this.type+".html", element => 
         {
             if(this.type == "messenge")
             {
@@ -96,8 +96,11 @@ var sendbuttonElement = document.getElementById("messenger-input-send");
 
 var categories = [];
 var users = [];
-var userIndex = 0;
-var msgIndex = 0;
+
+let params = new URLSearchParams(window.location.search);
+
+var userIndex = params.has("userIndex") ? parseInt(params.get("userIndex")) : 0;
+var msgIndex = params.has("msgIndex") ? parseInt(params.get("msgIndex")) : -1;
 
 function OnLoadCategories(data)
 {
@@ -117,24 +120,35 @@ function OnLoadUsers(data)
     {
         let user =  new JobUser (usersElement.children[i]);
         users.push(user);
-        
-        console.log(user.name);
         //messenge.CreateElement (contentElement);
     }
     
     let userInicial = users[userIndex];
-    inputmsgElement.value = userInicial.messenges[msgIndex].text;
+    if(msgIndex == -1)
+    {
+        inputmsgElement.value = userInicial.messenges[msgIndex+1].text;
+    }
+    else
+    {
+        LoadMessages ();
+    }
 
     nameElement.innerText = userInicial.name;
     photoElement.src = userInicial.photo;
     jobElement.innerText = userInicial.job;
 
     let catIcon = categories[userInicial.category].icon;
-    console.log(catIcon);
     categoryElement.src = catIcon;
 }
 
 var tempMsg;
+
+function SendMessage(){
+    users[userIndex].messenges[++msgIndex].CreateElement (contentElement);
+    setTimeout(ReceivingMessage, 2000);
+    //SaveParams();
+}
+
 function ReceivingMessage(){
     let msg = new JobMessenge("messenge", "otheruser", "...");
     msg.CreateElement(contentElement);
@@ -143,7 +157,8 @@ function ReceivingMessage(){
 
 function ReceiveMessage(){
     tempMsg.remove();
-    users[userIndex].messenges[msgIndex++].CreateElement (contentElement);
+    users[userIndex].messenges[++msgIndex].CreateElement (contentElement);
+    //SaveParams();
     let msg = new JobMessenge("messenge", "otheruser", "...");
     msg.CreateElement(contentElement);
     setTimeout(ReceiveDoc, 5000);
@@ -151,7 +166,27 @@ function ReceiveMessage(){
 
 function ReceiveDoc(){
     tempMsg.remove();
-    users[userIndex].messenges[msgIndex++].CreateElement (contentElement);
+    users[userIndex].messenges[++msgIndex].CreateElement (contentElement);
+    //SaveParams();
+}
+
+function SaveParams(){
+    let params = new URLSearchParams(window.location.search);
+    params.set("userIndex", userIndex);
+    params.set("msgIndex", msgIndex);
+    window.location.search = params;
+}
+
+var funcs = [SendMessage, ReceiveMessage, ReceiveDoc];
+
+function LoadMessages (){
+    sendbuttonElement.disabled = true;
+    let user = users[userIndex];
+    let i;
+    for(i = 0; i < msgIndex-1; i++){
+        user.messenges[i].CreateElement(contentElement);
+    }
+    funcs[i]();
 }
 
 LoadXML("datas/categories.xml", OnLoadCategories);
@@ -161,8 +196,7 @@ sendbuttonElement.onclick = x=>
 {
     sendbuttonElement.disabled = true;
     inputmsgElement.value = "";
-    users[userIndex].messenges[msgIndex++].CreateElement (contentElement);
-    setTimeout(ReceivingMessage, 2000);
+    SendMessage();
 };
 
 

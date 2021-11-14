@@ -1,16 +1,38 @@
-:root {
-    --verde: #33BB30;
-    
+header > iframe {
+    --frame-height: 30px;
+    display:flex;
+    flex-grow: 1;
+    width:100vw;
+    overflow: hidden;
+    min-height: var(--frame-height);
+    max-height: var(--frame-height);
 }
 
-#logo {
+aside{
     display: flex;
-    flex-direction: row;
-
-    background-color: var(--verde);
+    flex-grow: 1;
+    position: relative;
+    justify-self: center;
 }
 
-#logo > img {
-    display: block;
-    object-fit:contain;
+aside > iframe {
+    display:flex;
+    position: absolute;
+    flex-grow: 1;
+    width:352px;
+    min-height:600px;
+    right: 0px;
+    height:fit-content;
+    overflow: hidden;
 }
+
+main > iframe {
+    --frame-height: calc(100vh - 30px);
+    display:flex;
+    flex-grow: 1;
+    width:100vw;
+    min-height: var(--frame-height);
+    max-height: var(--frame-height);
+    overflow: hidden;
+}
+
