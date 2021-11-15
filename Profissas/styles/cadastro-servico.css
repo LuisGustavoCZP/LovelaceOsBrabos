@@ -14,36 +14,33 @@
 
 .container {
     display: flex;
-    background: #F5F9FF;
+    background: hsl(216, 100%, 98%);
+    gap: 50px;
+}
+
+input, button, textarea {
+    border: none;
 }
 
 .left-side {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    width: 65%;
-    gap: 10px;
+    width: 60%;
+    gap: 25px;
 }
 
 .up-part {
     display: flex;
+    margin-left: 50px;
 }
 
 .person {
-    margin-left: 100px;
+    margin-top: 10px;
     margin-right: 20px;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
-    border: 1px solid black;
-}
-
-.space {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-items: left;
-    align-items: left;
 }
 
 .person img {
@@ -52,16 +49,31 @@
     border-radius: 100%;
 }
 
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-items: left;
+    align-items: left;
+}
+
 #nome-anuncio {
-    height: 100px;
-    display: ;
+    height: 80px;
+    width: 100%;
+}
+
+#qualificacao {
+    height: 50px;
+    width: 100%;
 }
 
 .options {
     width: 40px;
     height: 40px;
+    margin-right: 20px;
     border: none;
     border-radius: 28px;
+    gap: 25px;
 }
 
 .options img {
@@ -70,33 +82,87 @@
     object-fit: cover;
 }
 
+.different {
+    background: var(--azul-claro);
+}
+
 .bottom-part {
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 #descricao {
-    width: 65%;
+    width: 95%;
+    height: 280px;
+}
+
+.flexwrap {
+    display: flex;
+}
+
+#local {
+    height: 50px;
+    width: 50%;
+}
+
+input[name="local"] {
+    margin-right: 150px;
+}
+
+#publicar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 25%;
+    background: var(--verde);
+    margin-right: 50px;
+    color: var(--mudarcor-inicial);
+    border-radius: 10px;
+    font-weight: 600;
 }
 
 .right-side {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35%;
-    font-family: ;
+    font-family: var(--poppins);
 }
 
 .right-side h2 {
-    font-family: sans-serif;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.right-side input[type="number"] {
+    height: 20px;
 }
 
 #start-hour, #final-hour {
     width: 60px;
 }
 
-.flexwrap {
+#feriado, #viagens {
+    margin-right: 110px;
+}
+
+#preco {
+    width: 150px;
+}
+
+.dias-semana {
     display: flex;
-    gap: 115px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: var(--azul-claro);
+    font-family: inherit;
+}
+
+#calendar {
+    width: 90px;
+    height: 110px;
 }
