@@ -1,23 +1,5 @@
 @import url(/Profissas/styles/root.css);
 
-:root {
-    /* cores */
-    --vermelho: #E33D3D;
-    --verde: #04D361;
-    --verde-highlight: #13F478;
-    --azul-escuro: #5889EA;
-    --azul-claro: #A0BEF6;
-    --cinza-background: #EDEDED;
-    --cinza-escuro: #6A617F;
-    --preto: #32264D;
-    --amarelo: #FFBD00;
-
-    /* fontes */
-    --logo-font: 'Libre Baskerville', serif;
-    --poppins: 'Poppins', sans-serif;
-    --roboto: 'Roboto', sans-serif;
-}
-
 body {
     margin: 0;
     width: 100%;
