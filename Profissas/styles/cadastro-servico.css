@@ -1,0 +1,67 @@
+@import "root.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    background: #F5F9FF;
+}
+
+.left-side {
+    display: flex;
+    border: 1px solid black;
+    width: 65%;
+}
+
+.person {
+    margin-left: 100px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+
+
+.person img {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+}
+
+#nome-anuncio {
+    height: 100px;
+    display: ;
+}
+
+.options {
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+}
+
+.options img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+}
+
+.right-side h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#start-hour, #final-hour {
+    width: 60px;
+}
