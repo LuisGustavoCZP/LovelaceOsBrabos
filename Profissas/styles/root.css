@@ -79,3 +79,7 @@
 body{
     margin: 0px;
 }
+
+img {
+    user-select: none;
+}

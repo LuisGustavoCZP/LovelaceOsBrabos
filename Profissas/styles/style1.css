@@ -42,3 +42,19 @@ main > nav a > h3 {
     font-size: 50%;
 }
 
+.colored-icon {
+    display:flex;
+    min-width: 100%;
+    padding-top: 100%;
+    background-color: var(--icon-color);
+    -webkit-mask: url(--icon-src) no-repeat center;
+    mask: url(--icon-src) no-repeat center;
+    mask-clip: border-box;
+    mask-size: 100%;
+    -webkit-background-clip: border-box;
+}
+
+.icon1 {
+    --icon-src : "../../images/icons/electrical_services_black_24dp.svg";
+    --icon-color: var(--cinza-claro);
+}
