@@ -4,16 +4,51 @@
         <title>Profissas</title>
         <link rel="stylesheet" href="styles/root.css" />
         <link rel="stylesheet" href="styles/style1.css" />
+        <link rel="stylesheet" href="styles/header-style2.css" />
     </head>
     <body>
         <header>
-            <iframe id="principal-header" src="template-header.html" frameborder="0" scrolling="no"></iframe>
+            <div class="headerConteiner">
+                <a href="">
+                    <div class="logo">
+                        <img src="/Profissas/images/projectImages/logo.svg" alt="logo">
+                        <h1>PROFISSAS</h1>
+                    </div>
+                </a>
+                
+                <div class="rightMenu">
+                    <a href="" id="publishButton">Anunciar</a>
+                    <div class="profileConteiner">
+                        <figure>
+                            <img src="/images/equipe/david.png" alt="profileImg">
+                        </figure>
+                        <p>David Gomes</p>
+                        <img src="/images/icons/expand_more_black_24dp.svg" alt="botao expandir">
+                    </div>
+                    <a href="" class="exitBox">
+                        <img src="/images/icons/logout_black_24dp.svg" alt="">
+                        <span>Sair</span>
+                    </a>
+                </div>
+            </div>
         </header>
         <aside>
             <iframe id="principal-messenger" src="subpages/luis/messenger.html" frameborder="0" scrolling="no"></iframe>
         </aside>
         <main>
-            <iframe id="principal-page" name="principal-page" src="subpages/luis/" frameborder="0"></iframe>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="subpages/luis/eletricistas.html" target="categoria">
+                            <img src="../images/icons/electrical_services_black_24dp.svg" />
+                            <h3>Eletricista</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <iframe name="categoria" frameborder="0"></iframe>
+            </section>
         </main>
     </body>
 </html>

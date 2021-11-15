@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/Profissas/styles/root.css">
+    <style>
+        :root {
+            /* cores */
+            --vermelho: hsl(0, 75%, 56%);
+            --verde: hsl(147, 96%, 42%);
+            --verde-highlight: hsl(147, 91%, 52%);
+            --azul-escuro: hsl(220, 78%, 63%);
+            --azul-claro: hsl(219, 83%, 80%);
+            --cinza-claro: hsl(0, 0%, 93%);
+            --cinza-escuro: hsl(258, 13%, 44%);
+            --preto: hsl(258, 34%, 23%);
+            --amarelo: hsl(44, 100%, 50%);
+            --branco: hsl(0, 0%, 100%);
+            /* fontes */
+            --logo-font: 'Libre Baskerville', serif;
+            --poppins: 'Poppins', sans-serif;
+            --roboto: 'Roboto', sans-serif;
+    
+            --button-radius: 5px;
+            --mudarcor-inicial: hsl(0, 0%, 100%);
+            --mudarcor-final: hsl(0, 0%, 0%);
+        }
+
+        header {
+            height: 70px;
+            background-color: var(--cinza-claro);
+            display: flex;
+            justify-content: center;
+        }
+        .headerConteiner {
+            width: 100vw;
+            min-width: 980px;
+            max-width: 1900px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+        
+        .headerConteiner a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-family: var(--logo-font);
+            text-decoration: none;
+        }
+
+        .rightMenu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--poppins);
+        }
+
+        #publishButton{
+            width: 140px;
+            height: 40px;
+            background-color: var(--verde);
+            color: var(--preto);
+            display: flex;
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .rightMenu figure {
+            margin: 10px;
+        }
+
+        .rightMenu figure > img {
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        .profileConteiner {
+            margin: 0 30px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .rightMenu a {
+            font-weight: 600;
+        }
+
+        .exitBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerConteiner">
+            <a href="">
+                <div class="logo">
+                    <img src="/Profissas/images/projectImages/logo.svg" alt="logo">
+                    <h1>PROFISSAS</h1>
+                </div>
+            </a>
+            
+            <div class="rightMenu">
+                <a href="" id="publishButton">Anunciar</a>
+                <div class="profileConteiner">
+                    <figure>
+                        <img src="/images/equipe/david.png" alt="profileImg">
+                    </figure>
+                    <p>David Gomes</p>
+                    <img src="/images/icons/expand_more_black_24dp.svg" alt="botao expandir">
+                </div>
+                <a href="" class="exitBox">
+                    <img src="/images/icons/logout_black_24dp.svg" alt="">
+                    <span>Sair</span>
+                </a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
