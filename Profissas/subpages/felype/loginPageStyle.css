@@ -25,12 +25,15 @@ body {
     background-color: var(--cinza-background);
     display: flex;
     flex-direction:column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    min-height: 700px;
+
 }
 
 main {
     width: 100%;
     padding-top: 130px;
+    margin-bottom: 6%;
 }
 
 .mainConteiner {
@@ -195,7 +198,7 @@ footer {
     background-color: var(--azul-claro);
     width: 100%;
     min-width: 960px;
-    height: 10vh;
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,5 +206,10 @@ footer {
     font-family: var(--roboto);
     color: var(--preto);
     font-style: italic;
-    justify-self: flex-end;
+}
+
+@media (max-width: 1500px) {
+    main {
+        margin-bottom: 2%;
+    }
 }
