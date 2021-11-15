@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
 .container {
     display: flex;
     background: #F5F9FF;
@@ -12,23 +19,37 @@
 
 .left-side {
     display: flex;
+    flex-direction: column;
     border: 1px solid black;
     width: 65%;
+    gap: 10px;
+}
+
+.up-part {
+    display: flex;
 }
 
 .person {
     margin-left: 100px;
+    margin-right: 20px;
     height: 150px;
     width: 150px;
-    border-radius: 100px;
+    border-radius: 100%;
     border: 1px solid black;
 }
 
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-items: left;
+    align-items: left;
+}
 
 .person img {
-    height: 90px;
-    width: 90px;
-    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
 }
 
 #nome-anuncio {
@@ -37,16 +58,24 @@
 }
 
 .options {
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     border: none;
     border-radius: 28px;
 }
 
 .options img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     object-fit: cover;
+}
+
+.bottom-part {
+    margin-left: 100px;
+}
+
+#descricao {
+    width: 65%;
 }
 
 .right-side {
@@ -54,6 +83,7 @@
     flex-direction: column;
     align-items: center;
     width: 35%;
+    font-family: ;
 }
 
 .right-side h2 {
@@ -64,4 +94,9 @@
 
 #start-hour, #final-hour {
     width: 60px;
+}
+
+.flexwrap {
+    display: flex;
+    gap: 115px;
 }
