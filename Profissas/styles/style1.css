@@ -197,7 +197,6 @@ main > nav a[href="x"] > span {
     mask: var(--icon-src) no-repeat center;
     mask-clip: border-box;
     mask-size: 100%;
-    -webkit-background-clip: border-box;
 }
 
 #icon-1 {
