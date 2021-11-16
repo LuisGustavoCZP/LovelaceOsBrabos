@@ -105,3 +105,12 @@ img {
     mask-clip: border-box;
     mask-size: 100%;
 }
+
+.popup-container {
+    position: relative;
+}
+
+.popup-window {
+    position: absolute;
+    top:0;
+}
