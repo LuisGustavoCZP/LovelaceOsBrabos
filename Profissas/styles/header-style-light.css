@@ -47,8 +47,6 @@ header {
 #publishButton{
     width: 140px;
     height: 40px;
-    background-color: var(--verde);
-    color: var(--preto);
     display: flex;
     border-radius: 8px;
     justify-content: center;

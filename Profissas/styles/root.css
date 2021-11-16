@@ -68,7 +68,7 @@
     vertical-align: middle;
 }
 
-.botao-padrao:hover:enabled {
+.botao-padrao:not([disabled]):hover {
     background-color: var(--verde-highlight);
     animation: --mudarcoroutbackground .5s;
 }

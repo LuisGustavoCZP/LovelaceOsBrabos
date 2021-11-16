@@ -110,10 +110,13 @@ main > nav > div > button {
 }
 
 main > nav > ul {
-    display: flex;
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    width: fit-content;
     padding-top: 10px;
     justify-content: space-between;
+    align-items: stretch;
+    justify-items: center;
 }
 
 main > nav li {
@@ -146,12 +149,25 @@ main > nav a > h3 {
     letter-spacing: .1em;
 }
 
+main > nav a[href="x"] {
+    cursor: not-allowed;
+}
+
 main > nav a:hover .colored-icon  {
     --icon-color: var(--branco);
 }
 
 main > nav a:hover > span {
     background-color: var(--verde);
+}
+
+main > nav a[href="x"]:hover > span {
+    background-color: var(--vermelho);
+}
+
+main > nav a[href="x"] > span {
+    cursor: not-allowed;
+    background-color: var(--cinza-escuro);
 }
 
 .colored-icon {
