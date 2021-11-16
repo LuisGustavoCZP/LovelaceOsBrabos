@@ -81,6 +81,7 @@ input, button, textarea {
     border: none;
     border-radius: 28px;
     gap: 25px;
+    cursor: pointer;
 }
 
 .options img {
@@ -89,7 +90,7 @@ input, button, textarea {
     object-fit: cover;
 }
 
-.different {
+.options:active {
     background: var(--azul-claro);
 }
 
@@ -126,6 +127,7 @@ input[name="local"] {
     color: var(--mudarcor-inicial);
     border-radius: 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .right-side {
