@@ -50,7 +50,7 @@ main > section > iframe {
     position: absolute;
     top: 0;
     width: 100%;
-    padding: 0px 5%;
+    padding: 0px 15%;
     /*min-height:calc(100vh - 90px - 11vh);*/
     
 }
@@ -102,11 +102,17 @@ main > nav > div > input {
 }
 
 main > nav > div > button {
+    display: flex;
     height: 100%;
     width: 5%;
     background-color: var(--branco);
     
     border: 0px;
+    align-items: center;
+}
+
+main > nav > div > button > span {
+    width: 100%;
 }
 
 main > nav > ul {
