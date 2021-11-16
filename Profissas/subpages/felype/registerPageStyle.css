@@ -1,0 +1,157 @@
+@import url(/Profissas/styles/root.css);
+
+:root {
+    /* cores */
+    --vermelho: hsl(0, 75%, 56%);
+    --verde: hsl(147, 96%, 42%);
+    --verde-highlight: hsl(147, 91%, 52%);
+    --azul-escuro: hsl(220, 78%, 63%);
+    --azul-claro: hsl(219, 82%, 80%);
+    --azul-fundo: hsl(216, 100%, 98%);
+    --cinza-claro: hsl(0, 0%, 93%);
+    --cinza-claro-figma: hsl(240, 25%, 98%);
+    --cinza-escuro: hsl(258, 13%, 44%);
+    --cinza-escuro-figma: hsl(0, 0%, 93%);
+    --preto: hsl(258, 34%, 23%);
+    --amarelo: hsl(44, 100%, 50%);
+    --branco: hsl(0, 0%, 100%);
+    /* fontes */
+    --logo-font: 'Libre Baskerville', serif;
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+    --button-radius: 8px;
+    --mudarcor-inicial: hsl(0, 0%, 100%);
+    --mudarcor-final: hsl(0, 0%, 0%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    background-color: var(--cinza-claro);
+}
+
+header {
+    height: 90px;
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-family: var(--logo-font);
+    font-size: 40px;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: center;
+    height: auto;
+    background-color: var(--cinza-claro);
+}
+
+.mainConteiner {
+    width: 50%;
+    max-width: 700px;
+    height: 460px;
+    padding: 20px;
+    background-color: var(--azul-fundo);
+    margin-bottom: 100px;
+    border-radius: 8px;
+    font-family: var(--poppins);
+}
+
+.mainConteiner h2 {
+    font-weight: 500;
+}
+
+.mainConteiner > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainConteiner > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 50%;
+}
+
+.mainConteiner > div > div h4 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.mainConteiner > div > div input {
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #b4b4b4;
+}
+
+.sendButton a {
+    width: 200px;
+    height: 38px;
+    background-color: var(--verde);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: var(--poppins);
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendButton a:hover {
+    background-color: var(--verde-highlight);
+}
+
+
+footer {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--poppins);
+    background-color: var(--azul-claro);
+    font-size: 14px;
+}
+
