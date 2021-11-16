@@ -99,8 +99,8 @@ var users = [];
 
 let params = new URLSearchParams(window.location.search);
 
-var userIndex = params.has("userIndex") ? parseInt(params.get("userIndex")) : 0;
-var msgIndex = params.has("msgIndex") ? parseInt(params.get("msgIndex")) : -1;
+var userIndex = parent.userIndex;
+var msgIndex = parent.msgIndex;
 
 function OnLoadCategories(data)
 {
@@ -113,17 +113,11 @@ function OnLoadCategories(data)
     }
 }
 
-function OnLoadUsers(data)
-{
-    let usersElement = data.firstChild;
-    for(i = 0; i < usersElement.childElementCount; i++)
-    {
-        let user =  new JobUser (usersElement.children[i]);
-        users.push(user);
-        //messenge.CreateElement (contentElement);
-    }
-    
+function UpdateMessenger(){
     let userInicial = users[userIndex];
+    console.log(userIndex);
+    if(userInicial==-1) return;
+
     if(msgIndex == -1)
     {
         inputmsgElement.value = userInicial.messenges[msgIndex+1].text;
@@ -139,6 +133,19 @@ function OnLoadUsers(data)
 
     let catIcon = categories[userInicial.category].icon;
     categoryElement.src = catIcon;
+} 
+
+function OnLoadUsers(data)
+{
+    let usersElement = data.firstChild;
+    for(i = 0; i < usersElement.childElementCount; i++)
+    {
+        let user =  new JobUser (usersElement.children[i]);
+        users.push(user);
+        //messenge.CreateElement (contentElement);
+    }
+
+    UpdateMessenger();
 }
 
 var tempMsg;

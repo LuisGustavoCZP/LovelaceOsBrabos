@@ -8,12 +8,11 @@ body {
 }
 
 aside{
-    display: none;
+    display: flex;
     flex-grow: 1;
     position: relative;
     justify-self: center;
 }
-
 aside > iframe {
     display:flex;
     position: absolute;
@@ -21,9 +20,11 @@ aside > iframe {
     width:352px;
     min-height:calc(100vh - 100px);
     right: 0px;
-    bottom: 0px;
+    top: 0px;
+    bottom: 500px;
     height:fit-content;
     overflow: hidden;
+    z-index: 10000;
 }
 
 main > section {

@@ -14,7 +14,30 @@
             <messenge>
                 <type>messenge</type>
                 <owner>otheruser</owner>
-                <text>Bom dia David! Sério? 12 lampadas??? Vou marndar meu orçamento senhor, mas já aviso que vai sair caro! Só um instante...</text>
+                <text>Bom dia David! Sério? 12 lampadas??? Vou mandar meu orçamento senhor, mas já aviso que vai sair caro! Só um instante...</text>
+            </messenge>
+            <messenge>
+                <type>orcamento</type>
+                <owner>otheruser</owner>
+                <text>VER ORÇAMENTO</text>
+            </messenge>
+        </messenges>
+    </user>
+    <user>
+        <name>Luis Pereira</name>
+        <category>0</category>
+        <job>Estagiario Eletricista</job>
+        <photo>../../../images/equipe/luis.png</photo>
+        <messenges>
+            <messenge>
+                <type>messenge</type>
+                <owner>myuser</owner>
+                <text>Oi Luis, deu ruim aqui... ai menino meu filho fica jogando bola aqui em casa, esse pestinha! Enfim... Quanto que fica pra trocar as 12 lampadas?</text>
+            </messenge>
+            <messenge>
+                <type>messenge</type>
+                <owner>otheruser</owner>
+                <text>Bom dia David! Puuutz!!!! Mandando o orçamento aqui, mas trocar todas elas vão ser um alto valor de mão de obra!</text>
             </messenge>
             <messenge>
                 <type>orcamento</type>
