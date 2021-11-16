@@ -53,6 +53,7 @@
 .profilePhoto img {
     height: 140px;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .profileInfoItems {
