@@ -3,7 +3,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #F5F9FF;
+    background-color: var(--azul-fundo);
 }
 
 /*========HEADER===============================*/
