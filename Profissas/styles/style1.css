@@ -87,11 +87,13 @@ main > nav {
     background-color: var(--azul-escuro);
 }
 
+
+
 main > nav > div {
     display: flex;
     flex-direction: row;
     width: 60%;
-    height: 30px;
+    height: 40px;
 }
 
 main > nav > div > input {
@@ -104,13 +106,17 @@ main > nav > div > input {
     padding: 5px;
 }
 
+nav > div input {
+    border-radius: 6px 0 0 6px;
+}
+
 main > nav > div > button {
     display: flex;
     height: 100%;
     width: 5%;
     background-color: var(--branco);
-    
     border: 0px;
+    border-radius: 0 6px 6px 0;
     align-items: center;
 }
 
@@ -141,6 +147,7 @@ main > nav a {
     justify-content: center;
     align-items: center;
 }
+
 
 main > nav a > span {
     display: flex;
