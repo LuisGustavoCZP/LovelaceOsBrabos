@@ -202,7 +202,19 @@ h1 {
     margin: 0px 10% 1em;
     background-color: var(--branco);
     font-family: var(--poppins);
-    padding: 2em;
+    padding: 0.5em 3em 2em;
+}
+
+#rating_header {
+    font-size: 150%;
+    margin-left: -2em;
+    margin-right: -2em;
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid black;
+}
+
+#rating_header > p {
+    padding-left: 1em;
 }
 
 .rating_row {
@@ -229,4 +241,15 @@ h1 {
     justify-content: space-between;
     height: 3.5em;
     margin-left: 1em;
+}
+
+/*=========================FOOTER========================*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--poppins);
+    color: hsl (258, 13%, 44%);
+    font-size: 12px;
 }
