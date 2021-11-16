@@ -106,7 +106,6 @@ main > nav > div > button {
     width: 5%;
     background-color: var(--branco);
     
-    padding: 5px;
     border: 0px;
 }
 
@@ -141,7 +140,7 @@ main > nav a > span {
 
 main > nav a > h3 {
     padding: 5px;
-    font-size: 50%;
+    font-size: 80%;
     color: var(--branco);
     font-family: var(--roboto);
     letter-spacing: .1em;
@@ -154,7 +153,6 @@ main > nav a:hover .icon1  {
 main > nav a:hover > span {
     background-color: var(--verde);
 }
-
 
 .colored-icon {
     --icon-src : url("");
@@ -170,10 +168,11 @@ main > nav a:hover > span {
     -webkit-background-clip: border-box;
 }
 
-.icon1 {
+#icon-2 {
     --icon-src : url("../../images/icons/electrical_services_black_24dp.svg");
     --icon-color: var(--preto);
 }
+
 
 footer {
     width: calc(100% - 20px);
