@@ -1,7 +1,29 @@
-@import url(/Profissas/styles/root.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /* cores */
+    --vermelho: hsl(0, 75%, 56%);
+    --verde: hsl(147, 96%, 42%);
+    --verde-highlight: hsl(147, 91%, 52%);
+    --azul-escuro: hsl(220, 78%, 63%);
+    --azul-claro: hsl(219, 82%, 80%);
+    --azul-fundo: hsl(216, 100%, 98%);
+    --cinza-claro: hsl(0, 0%, 93%);
+    --cinza-claro-figma: hsl(240, 25%, 98%);
+    --cinza-escuro: hsl(258, 13%, 44%);
+    --cinza-escuro-figma: hsl(258, 13%, 44%);
+    --preto: hsl(258, 34%, 23%);
+    --amarelo: hsl(44, 100%, 50%);
+    --branco: hsl(0, 0%, 100%);
+    /* fontes */
+    --logo-font: 'Libre Baskerville', serif;
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
 
 body {
     background-color: var(--cinza-claro);
+    margin: 0;
 }
 
 header {
@@ -198,9 +220,6 @@ main {
     width: 600px;
 }
 
-.serviceInfo > div {
-    margin-bottom: 20px;
-}
 .serviceInfoBox {
     background-color: white;
     border-radius: 8px;
@@ -247,12 +266,8 @@ main {
     border-radius: 8px;
 }
 
-.budgetConteiner > h3 {
-    margin: 30px;
-}
-
 .budgetItems {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 90%;
 }
 
@@ -260,7 +275,6 @@ main {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--cinza-claro);
-    margin-bottom: 10px;
 }
 
 .budgetConteiner a {
