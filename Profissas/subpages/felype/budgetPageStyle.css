@@ -1,0 +1,279 @@
+@import url(/Profissas/styles/root.css);
+
+body {
+    background-color: var(--cinza-claro);
+}
+
+header {
+    height: 70px;
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.headerConteiner {
+    width: 100%;
+    min-width: 980px;
+    max-width: 1800px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.headerConteiner a {
+    text-decoration: none;
+    color: black    ;
+}
+.logo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-family: var(--logo-font);
+    text-decoration: none;
+}
+
+.rightMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--poppins);
+    color: white;
+}
+
+#publishButton{
+    width: 140px;
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#publishButton:hover {
+    background-color: var(--verde-highlight);
+}
+
+.rightMenu figure {
+    margin: 10px;
+}
+
+.rightMenu figure > img {
+    height: 50px;
+    border-radius: 100%;
+}
+
+.profileConteiner {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rightMenu a {
+    font-weight: 600;
+}
+
+.exitBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.exitBox span {
+    color: white;
+}
+
+/* Fim do header */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainHeader {
+    margin: 40px;
+    text-align: center;
+}
+
+.mainHeader h2 {
+    font-family: var(--roboto);
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--preto);
+}
+
+.mainConteiner {
+    margin: 0 auto;
+}
+
+.sectionsConteiner {
+    min-width: 600px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.profissaConteiner {
+    display: flex;
+    border-radius: 8px;
+    width: 50%;
+    min-width: 600px;
+    height: 250px;
+    align-items: center;
+}
+
+.photoConteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoConteiner img{
+    height: 200px;
+    border-radius: 100%;
+    margin: 20px;
+    margin-right: 40px;
+}
+
+.profissaInfoConteiner {
+    color: var(--preto);
+    font-family: var(--poppins);
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.profissaName p{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.profissaJob {
+    display: flex;
+    align-items: center;
+}
+
+.profissaSince p{
+    display: flex;
+    flex-direction: column;
+}
+
+.profissaDescription {
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.profissaDescription p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* fim do perfil do profissa */
+
+.serviceInfo {
+    font-family: var(--poppins);
+    color: var(--preto);
+    width: 600px;
+}
+
+.serviceInfoBox {
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.serviceDescription {
+    padding-left: 14px;
+}
+
+.serviceInfoBox p, .serviceAdress p, .paymentMethod p {
+    margin: 0;
+}
+
+.serviceAdress img, .paymentMethod img {
+    margin: 8px;
+}
+
+.serviceAdress > p, .paymentMethod > p {
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceAdressStateNCity {
+    color: var(--cinza-escuro);
+}
+
+.paymentMethod img {
+    height: 50px;
+}
+
+/* Fim do conteiner da esquerda */
+
+.budgetConteiner {
+    background-color: white;
+    min-width: 360px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:  var(--poppins);
+    border-radius: 8px;
+}
+
+.budgetItems {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.budgetItems p{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.budgetConteiner a {
+    width: 140px;
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#totalPrice {
+    font-weight: 600;
+}
+
+.budgetConteiner a:hover {
+    background-color: var(--verde-highlight);
+}

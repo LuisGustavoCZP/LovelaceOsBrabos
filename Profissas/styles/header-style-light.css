@@ -52,6 +52,11 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 16px;
+    transition: 0.3s;
+}
+
+#publishButton:hover {
+    background-color: var(--verde-highlight);
 }
 
 .rightMenu figure {
