@@ -49,7 +49,7 @@ main > section > iframe {
     left: 0;
     position: absolute;
     top: 0;
-    width: 90%;
+    width: 100%;
     padding: 0px 5%;
     /*min-height:calc(100vh - 90px - 11vh);*/
     
