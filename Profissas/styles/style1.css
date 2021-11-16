@@ -36,7 +36,7 @@ main > section {
     justify-content:center;
     background-color: var(--azul-fundo);
     
-    overflow: hidden;
+    overflow: none;
     
     /*min-height: 50vh;
     /*padding-top: 45%;  16:9*/

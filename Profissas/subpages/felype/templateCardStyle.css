@@ -24,8 +24,12 @@
 }
 
 .profissaCard {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     border-radius: 8px;
     background-color: white;
+    text-decoration: none;
     /*min-width: 300px;
     max-width: 540px;*/
     width: 100%;

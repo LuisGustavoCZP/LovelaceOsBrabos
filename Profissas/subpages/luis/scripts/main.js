@@ -11,9 +11,10 @@ function Messenger(enable) {
 }
 
 function SelectPerson(index) {
-    Messenger(index>=0?true: false)
-    messengerBox.contentWindow.UpdateMessenger();
+    messengerBox.contentWindow.UpdateMessenger(index);
     userIndex = index;
+    msgIndex = -1;
+    Messenger(index>=0?true: false);
     console.log(index);
 }
 
