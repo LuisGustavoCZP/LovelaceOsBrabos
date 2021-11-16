@@ -25,6 +25,7 @@ aside > iframe {
     height:fit-content;
     overflow: hidden;
     z-index: 10000;
+    overflow-x: none;
 }
 
 main > section {
@@ -52,6 +53,7 @@ main > section > iframe {
     top: 0;
     width: 100%;
     padding: 0px 15%;
+    overflow-x: none;
     /*min-height:calc(100vh - 90px - 11vh);*/
     
 }
