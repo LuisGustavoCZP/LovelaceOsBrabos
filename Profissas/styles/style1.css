@@ -146,7 +146,7 @@ main > nav a > h3 {
     letter-spacing: .1em;
 }
 
-main > nav a:hover .icon1  {
+main > nav a:hover .colored-icon  {
     --icon-color: var(--branco);
 }
 
@@ -168,9 +168,36 @@ main > nav a:hover > span {
     -webkit-background-clip: border-box;
 }
 
+#icon-1 {
+    --icon-src : url("../../images/icons/construction_black_24dp.svg");
+}
+
 #icon-2 {
     --icon-src : url("../../images/icons/electrical_services_black_24dp.svg");
-    --icon-color: var(--preto);
+}
+
+#icon-3 {
+    --icon-src : url("../../images/icons/plumbing_black_24dp.svg");
+}
+
+#icon-4 {
+    --icon-src : url("../../images/icons/carpenter_black_24dp.svg");
+}
+
+#icon-5 {
+    --icon-src : url("../../images/icons/grass_black_24dp.svg");
+}
+
+#icon-6 {
+    --icon-src : url("../../images/icons/local_shipping_black_24dp.svg");
+}
+
+#icon-7 {
+    --icon-src : url("../../images/icons/imagesearch_roller_black_24dp.svg");
+}
+
+#icon-search {
+    --icon-src : url("../../images/icons/search_black_24dp.svg");
 }
 
 
