@@ -92,3 +92,16 @@ body{
 img {
     user-select: none;
 }
+
+.colored-icon {
+    --icon-src : url("");
+    --icon-color: var(--preto);
+    display:flex;
+    min-width: 100%;
+    padding-top: 100%;
+    background-color: var(--icon-color);
+    -webkit-mask: var(--icon-src) no-repeat center;
+    mask: var(--icon-src) no-repeat center;
+    mask-clip: border-box;
+    mask-size: 100%;
+}
