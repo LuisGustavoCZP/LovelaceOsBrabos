@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* cores */
+    --vermelho: hsl(0, 75%, 56%);
+    --verde: hsl(147, 96%, 42%);
+    --verde-highlight: hsl(147, 91%, 52%);
+    --azul-escuro: hsl(220, 78%, 63%);
+    --azul-claro: hsl(219, 82%, 80%);
+    --azul-fundo: hsl(216, 100%, 98%);
+    --cinza-claro: hsl(0, 0%, 93%);
+    --cinza-claro-figma: hsl(240, 25%, 98%);
+    --cinza-escuro: hsl(258, 13%, 44%);
+    --cinza-escuro-figma: hsl(0, 0%, 93%);
+    --preto: hsl(258, 34%, 23%);
+    --amarelo: hsl(44, 100%, 50%);
+    --branco: hsl(0, 0%, 100%);
+    /* fontes */
+    --logo-font: 'Libre Baskerville', serif;
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+    --button-radius: 8px;
+    --mudarcor-inicial: hsl(0, 0%, 100%);
+    --mudarcor-final: hsl(0, 0%, 0%);
+}
+
+@keyframes --mudarcoroutbackground {
+    0% {
+        background-color: var(--mudarcor-inicial);
+    }
+    100% {
+        background-color: var(--mudarcor-final);
+    }
+}
+
+@keyframes --mudarcorinnbackground {
+    0% {
+        background-color: var(--mudarcor-final);
+    }
+    100% {
+        background-color: var(--mudarcor-inicial);
+    }
+}
+
+.botao-padrao {
+    background-color: var(--verde);
+    font-family: var(--poppins);
+    border: none;
+    border-radius: var(--button-radius);
+    cursor:pointer;
+    text-align: center;
+    vertical-align: middle;
+    --mudarcor-inicial: var(--verde);
+    --mudarcor-final: var(--verde-highlight);
+    
+    animation: --mudarcorinnbackground .5s;
+}
+
+.botao-padrao h4 {
+    margin: 0px;
+    font-family: var(--poppins);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.botao-padrao:not([disabled]):hover {
+    background-color: var(--verde-highlight);
+    animation: --mudarcoroutbackground .5s;
+}
+
+.botao-padrao:disabled {
+    background-color: var(--cinza-escuro);
+    animation: none;
+    cursor:default;
+}
+
+.invisivel {
+    display: none;
+}
+
+body{
+    margin: 0px;
+}
+
+img {
+    user-select: none;
+}
