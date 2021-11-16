@@ -1,0 +1,129 @@
+@import url(/Profissas/styles/root.css);
+
+:root {
+    /* cores */
+    --vermelho: hsl(0, 75%, 56%);
+    --verde: hsl(147, 96%, 42%);
+    --verde-highlight: hsl(147, 91%, 52%);
+    --azul-escuro: hsl(220, 78%, 63%);
+    --azul-claro: hsl(219, 82%, 80%);
+    --azul-fundo: hsl(216, 100%, 98%);
+    --cinza-claro: hsl(0, 0%, 93%);
+    --cinza-escuro: hsl(258, 13%, 44%);
+    --preto: hsl(258, 34%, 23%);
+    --amarelo: hsl(44, 100%, 50%);
+    --branco: hsl(0, 0%, 100%);
+    /* fontes */
+    --logo-font: 'Libre Baskerville', serif;
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+    --button-radius: 8px;
+    --mudarcor-inicial: hsl(0, 0%, 100%);
+    --mudarcor-final: hsl(0, 0%, 0%);
+}
+
+.profissaCard {
+    border-radius: 8px;
+    background-color: white;
+    min-width: 300px;
+    max-width: 540px;
+    height: auto;
+    border: 1px solid black;
+    color: var(--preto);
+    position: relative;
+}
+
+.profileInfoConteiner {
+    display: flex;
+    margin: 10px;
+}
+
+.profilePhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePhoto img {
+    height: 140px;
+    border-radius: 100%;
+}
+
+.profileInfoItems {
+    margin-left: 10px;
+    font-family: var(--poppins);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profissaName h4 {
+    margin: 6px 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.profissaJob, .profissaDisponibility {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+
+.profissaJob img, .profissaDisponibility img {
+    margin: 0 4px;
+}
+
+.profissaJob span, .profissaDisponibility span {
+    align-self: flex-end;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.favoriteHeart img {
+    height: 40px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.subProfileInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 12px 4px;
+    font-family: var(--poppins);
+
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+}
+
+.reviewStars {
+    margin-right: 8px;
+}
+
+.reviewStars img{
+    height: 36px;
+    margin: -4px;
+}
+
+.reviewNumber {
+    display: flex;
+    align-items: center;
+}
+
+.reviewNumber img {
+    margin-right: 4px;
+}
+
+.locationDistance {
+    display: flex;
+    align-items: center;
+}
+
+.locationDistance img {
+    margin-left: 4px;
+}
