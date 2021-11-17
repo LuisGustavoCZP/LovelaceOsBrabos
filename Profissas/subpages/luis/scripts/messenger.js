@@ -9,23 +9,6 @@ class JobCategory
             this.users.push(t.children[i]);
         }
     }
-
-    /*
-    constructor (owner, text, type){
-        this.type = type;
-        this.owner = owner;
-        this.text = text;
-    }
-    
-
-    CreateElement(parentElement) {
-        LoadHTML("template-"+this.type+".html", element => 
-        {
-            element.children[0].innerText = this.text;
-            element.classList.add(this.owner);
-            parentElement.append(element);
-        });
-    }*/
 }
 
 class JobUser 
