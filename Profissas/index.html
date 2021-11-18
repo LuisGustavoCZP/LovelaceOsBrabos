@@ -1,3 +1,24 @@
+<!-- Resumo => 
+        Positivos
+        1º Consistência e padrão de design
+        2º modularização das folhas de estilos
+        
+        Negativos
+        1º Codificação em dupla linguagem
+        2º Valores de atributos pouco descritivos
+        3º Presença de muitas tags desnecessárias
+        
+        Extra
+        1º É recomendado que as pastas de ícones(icons), fontes(fonts) e imagens(images) sejam subpastas da pasta assets.
+        2º Nomes de arquivos devem ser preferencialmente escritos em uma única convenção (snake_case, kebab-case)
+
+        Vocês encontrarão outros feedbacks abaixo neste arquivo e também nos arquivos: 
+            ./cadastro-servico.html
+            ./index-messenger.HTML
+            ./subpages/luis/scripts/main.js
+         
+
+     -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,9 +30,9 @@
     </head>
     <body>
         <header>
-            <div class="headerConteiner">
+            <div class="headerConteiner"><!--Valores de atributos HTML devem ser escritos preferencialmente em kebab-case-->
                 <a href="">
-                    <div class="logo">
+                    <div class="logo"><!-- tag <div> desnecessária-->
                         <img src="images/projectImages/logo.svg" alt="logo">
                         <h1>PROFISSAS</h1>
                     </div>
@@ -21,34 +42,36 @@
                     <div class="profileConteiner">
                         <figure>
                             <img src="../images/equipe/david.png" alt="profileImg">
+                            <!-- O atributo alt deve conter uma descrição da imagem como valor-->
                         </figure>
                         <p>David Gomes</p>
                         <img src="../images/icons/expand_more_black_24dp.svg" alt="botao expandir">
                     </div>
                     <a href="subpages/felype/loginPage.html" class="exitBox">
                         <img src="../images/icons/logout_black_24dp.svg" alt="">
-                        <span>Sair</span>
+                        <span>Sair</span><!-- tag <span> desnecessária-->
                     </a>
                 </div>
             </div>
         </header>
         <aside>
             <iframe class="invisivel" id="principal-messenger" src="subpages/luis/messenger.html" frameborder="0" scrolling="no"></iframe>
+        <!--É recomendado manter um único idioma para codificação(preferencialmente inglês)-->
         </aside>
         <main>
             <nav>
                 <div>
                     <input type="search" id="procurar" placeholder="pesquise um serviço, especialista ou localidade..."/>
                     <button>
-                        <span>
-                            <span id="icon-search" class="colored-icon"></span>
+                        <span><!-- tag <span> desnecessária-->
+                            <span id="icon-search" class="colored-icon"></span><!-- tag <span> desnecessária-->
                         </span>
                     </button>
                 </div>
                 <ul>
                     <li>
                         <a href="subpages/luis/pedreiros.html" target="categoria">
-                            <span>
+                            <span><!-- tag <span> desnecessária-->
                                 <span id="icon-1" class="colored-icon"></span>
                             </span>
                             <h3>Pedreiro</h3>
@@ -56,7 +79,7 @@
                     </li>
                     <li>
                         <a href="subpages/luis/eletricistas.html" target="categoria">
-                            <span>
+                            <span><!-- tag <span> desnecessária-->
                                 <span id="icon-2" class="colored-icon"></span>
                             </span>
                             <h3>Eletricista</h3>
@@ -64,7 +87,7 @@
                     </li>
                     <li>
                         <a href="x" target="categoria">
-                            <span>
+                            <span><!-- tag <span> desnecessária-->
                                 <span id="icon-3" class="colored-icon"></span>
                             </span>
                             <h3>Encanador</h3>
@@ -72,7 +95,7 @@
                     </li>
                     <li>
                         <a href="x" target="categoria">
-                            <span>
+                            <span><!-- tag <span> desnecessária-->
                                 <span id="icon-4" class="colored-icon"></span>
                             </span>
                             <h3>Marceneiro</h3>
@@ -80,7 +103,7 @@
                     </li>
                     <li>
                         <a href="x" target="categoria">
-                            <span>
+                            <span><!-- tag <span> desnecessária-->
                                 <span id="icon-5" class="colored-icon"></span>
                             </span>
                             <h3>Jardineiro</h3>
@@ -88,7 +111,7 @@
                     </li>
                     <li>
                         <a href="x" target="categoria">
-                            <span>
+                            <span><!-- tag <span> desnecessária-->
                                 <span id="icon-6" class="colored-icon"></span>
                             </span>
                             <h3>Transporte</h3>
@@ -96,7 +119,7 @@
                     </li>
                     <li>
                         <a href="x" target="categoria">
-                            <span>
+                            <span><!-- tag <span> desnecessária-->
                                 <span id="icon-7" class="colored-icon"></span>
                             </span>
                             <h3>Pintor</h3>
@@ -105,6 +128,7 @@
                 </ul>
             </nav>
             <section>
+                <!--Toda <section> precisa ter uma tag de título(<h1>, <h2>...).-->
                 <iframe name="categoria" frameborder="0" src="subpages/luis/eletricistas.html"></iframe>
             </section>
         </main>

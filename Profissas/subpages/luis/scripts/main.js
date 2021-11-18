@@ -9,6 +9,10 @@ function Messenger(enable) {
         messengerBox.classList.remove("invisivel");
     }
 }
+// => Alternativa para a função acima
+// function Messenger() {
+//     messengerBox.classList.toggle("invisivel");
+// }
 
 function SelectPerson(index) {
     messengerBox.contentWindow.UpdateMessenger(index);
